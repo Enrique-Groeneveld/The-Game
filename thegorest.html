@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thegorest</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<script type="text/javascript">
+	alert ("Welcome to my game called The Gorest answer with 1 2 or 3 if asked")
+    
+	begin = prompt ("You wake up in the middle of a forest you are on a crossroad where do you go (1.Forward 2. left 3.right");
+
+			if (begin=="1"){
+		 	building1=prompt ("You see a building.Enter it? or keep walking(1.yes  or 2.no)?")
+
+		 	if (building1=="1"){
+		 	dio=prompt ("You enter the building and see a man on top of a flight of stairs he is talking about THE WORLD or something. Aproach him.1 or leave 2.")
+		 	
+		 	
+
+		 	if (dio=="1"){
+		 	alert ("You try to walk up the stair but as soon as you walk up you are suddenly at the bottom again. You eventually try to talk to the man on the stair and he beats you to death.")
+		 	document.write ("<h1>Bad Ending</h1> <br> what did you think whas going to happen?")
+		 	             
+
+		 	  		}
+		 	else{
+		 		alert ("You leave the building.")
+		 		building()
+		 	 	}
+		 	}
+		 	else {
+		 		building()
+		 	}
+			
+		    }
+            
+            else if(begin=="2"){
+            light=prompt ("You see a light in the distance.Do you want to go towards it?(Yes 1./No 2.)")
+            if (light=="1"){
+            	alert ("The light comes from a building u go into the building and the door locks behind you and the light fades. You feel a knife going into your chest.")
+ 			    document.write ("<h1>Bad Ending</h1> <br> i dont think going into a ominous building whas the best idea...")
+ 			}
+ 			else { 
+ 				alert ("You decided you are a boring person, and just stood there for hours till eventually  you died of starvation")
+ 				document.write ("<h1>Bad Ending</h1> <br> This one is really straigt forward..")
+
+
+
+ 			}
+            }
+
+            else if (begin=="3"){
+            alert ("You walk right into a beartrap and die.")
+            document.write ("<h1>Bad Ending</h1> <br> In speedrunning this would be considerd a world record pace")
+            }
+
+            else if (begin == "4"){
+
+            alert ("You have found an easter egg");	
+            document.write("<h3 >Secret Ending</h3> <br> You seem to have found a secret ending i haven't really put anything here so let me tell a joke <br> What happens when u give someone 3 choices and they make another choice? <br> <br> You get a secret ending with a terrible joke. ");
+
+            }
+
+            
+
+
+            function building() {
+                               alert ("You keep walking down the road")
+                               paper=prompt ("You find a tree with a scribbled on piece of paper. Do you want to grab the piece of paper (1.) or do you leave it (2.)")
+                               if (paper == "1"){
+                               alert ("You grab the piece of paper and suddenly a man appears behind you loudly screaming. He snaps your neck.")
+                               document.write ("<h1>Bad Ending</h1> <br> This is giving me 2012 vibes. What if you found 7 more pages?")
+                               }
+                               else {
+                               	motorbike=prompt ("You dont grab the paper and keep walking till you find a rusty motorbike. Do you Try to jumpstart it and see if it works. Yes.1 No.2")
+                               	if (motorbike== "1") {
+                               	alert ("The MotorBike starts and is in perfect working condition you drive out of the forest en proceed to live your live (or do you?....)")
+                                document.write ("<h2>Good Ending </h2> <br> You drive out of the forest with your motorbike. <br> You have limited fuel but you will manage. You are out of the forest but the forest isn't out of you. <br> the things you saw in the forest will haunt you. <br> You live happily ever after (or do you?)")
+                               }
+                               else {
+                               	alert ("You dont try it and dont find your way back")
+                               	document.write ("<h1>Bad Ending</h1> <br> All you had to do whas follow the damn path CJ. ")
+
+                               }
+
+                               }
+                               	}
+			
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+	
+</body>
+</html>
