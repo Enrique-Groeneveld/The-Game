@@ -13,17 +13,52 @@
 			if (begin=="1"){
 		 	building1=prompt ("You see a building.Enter it? or keep walking(1.yes  or 2.no)?")
 
+		 	
+
 		 	if (building1=="1"){
-		 	dio=prompt ("You enter the building and see a man on top of a flight of stairs he is talking about THE WORLD or something. Aproach him.1 or leave 2.")
+
+             	RNGFight = Math.random() * 100;
+            if (RNGFight < 25){
+            	var zwaard=0
+            	zwaard=prompt ("As soon as you open the door you see a sword with the word Pluck on into. Do you want to pick it up (1) or not (2)")
+            }
+             
+
+
+
+		 	dio=prompt ("after you enter the building and see a man on top of a flight of stairs he is talking about THE WORLD or something. Aproach him.1 or leave 2.")
 		 	
 		 	
 
 		 	if (dio=="1"){
-		 	alert ("You try to walk up the stair but as soon as you walk up you are suddenly at the bottom again. You eventually try to talk to the man on the stair and he beats you to death.")
-		 	document.write ("<h1>Bad Ending</h1> <br> what did you think whas going to happen?")
-		 	             
+           
+		 	if (zwaard=="1") { 
 
-		 	  		}
+                 
+             	RNGFight2 = Math.random() * 100;
+            if (RNGFight2 < 50){ 
+
+		 		 
+		     	alert ("You have won")
+
+		     	document.write ("<h4>Alternate Ending</h4> <br> You sliced the man in half and threw his body of a balcony. <br> from the balcony you see the border of the forest.<br> You walk towards it and, with your new found sword you start a new life. . .")
+                              }	 	
+                     else{
+             	alert ("You try to aproach the man on the stairs with you sword but you never manage to land a single hit and he kills you by punching a hole straight through you.")
+
+             	document.write ("<h1>Bad Ending</h1> <br> You would almost think it's luck based. . . ")
+                         }
+
+        		 
+		 	             
+		 	  		        }
+              else{
+             	alert ("You try to walk up the stair but as soon as you walk up you are suddenly at the bottom again. You eventually try to talk to the man on the stair and  he beats you to death.")
+
+             	document.write ("<h1>Bad Ending</h1> <br> what did you think whas going to happen?")
+             }    
+             }
+
 		 	else{
 		 		alert ("You leave the building.")
 		 		building()
@@ -51,9 +86,69 @@
             }
 
             else if (begin=="3"){
+
+
+
+             	
+             	beartrap = Math.random() * 100;
+            if (beartrap < 60){ 
             alert ("You walk right into a beartrap and die.")
-            document.write ("<h1>Bad Ending</h1> <br> In speedrunning this would be considerd a world record pace")
+            document.write ("<h1>Bad Ending</h1> <br> In speedrunning this would be considerd a world record pace") 
+                              }
+
+
+            else{
+           alert ("You seem to have walked into a beartrap")
+           alert ("You look around you while you bleed to death")
+           
+           syringe=prompt ("You see a syringe with a label on it: If you have bloodtype B+ dont inject it may be fatal.  Ofcourse you like most people don't know your bloodtype. Do you inject yourself (1) or let yourself bleed-out (2)")
+                             }
+            
+            if (syringe=="1"){
+
+             	inject = Math.random() * 100;
+            if (inject < 50){ 
+
+
+            alert ("You injected yourself and soon enough you found out you had the bloodtype that said a lot about your live.....B+")
+            document.write ("<h1>Bad Ending</h1> <br> Check yourself before you inject yourself")
+                             }
+            else if (inject > 50)
+            {
+            
+            alert ("The syringe gives you unbelieveble strength and you manage to break the beartrap and stop the bleeding.")
+
+                        document.write ("<h5>Super ending</h5> <br> You soon figgure out you are extremely agile and manage to run out of the forest running 40km an hour")
+
+
+
+
             }
+
+
+
+            }
+
+            else {
+            	document.write ("<h1>Bad Ending</h1> <br> The bleeding kills you. Maybe the syringe could have saved you.")
+
+            }
+
+
+             
+
+
+
+           
+                              }
+
+
+
+
+
+
+
+
 
             else if (begin == "4"){
 
